@@ -1,1 +1,138 @@
-<h1>khadija</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Navbar</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <header class="navbar">
+    <!-- Website Name -->
+    <a href="#" class="brand">🍴 Foodie</a>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+      <form action="#" method="get">
+        <input type="text" name="q" placeholder="Search food...">
+      </form>
+    </div>
+
+    <!-- Menu + Cart + Sign In + Language -->
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <div class="dropdown">
+  <a href="#">Menu <i class="fas fa-caret-down"></i></a>
+  <div class="dropdown-content">
+    <a href="#">🍔 Burgers</a>
+    <a href="#">🍕 Pizza</a>
+    <a href="#">🥗 Salads</a>
+    <a href="#">🥤 Drinks</a>
+    <a href="#">🍰 Desserts</a>
+  </div>
+</div>
+
+      
+    <!-- Cart Icon -->
+      <a href="#" class="cart">Cart<i class="fas fa-shopping-cart"></i> 
+        <span class="count">0</span>
+      </a>
+
+      <!-- Sign In Icon -->
+      <a href="#">Login<i class="fas fa-user"></i></a>
+
+      <!-- Language Dropdown -->
+      <select class="language-select">
+        <option value="en">English</option>
+        <option value="ur">Urdu</option>
+        <option value="fr">French</option>
+        <option value="ar">Arabic</option>
+      </select>
+    </div>
+  </header>
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Fresh & Fast Food Delivery 🍔🍕</h1>
+    <p>Get your favorite meals delivered to your doorstep in minutes!</p>
+    <a href="#" class="btn">Order Now</a>
+  </div>
+</section>
+
+<section class="cards-section">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Card Image">
+    <h3>Beautiful Jewelry</h3>
+    <p>Shine with our elegant jewelry collection, crafted with love.</p>
+    <button>Shop Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600180758895-7c4c88e0c6e8" alt="Card Image">
+    <h3>Exclusive Design</h3>
+    <p>Handmade unique designs perfect for every occasion.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="card">
+    <img src="{% static 'imgs/burger.jpg' %}" alt="Card Image">
+    <h3>Special Offers</h3>
+    <p>Don’t miss out on our seasonal discounts and bundles.</p>
+    <button>Grab Deal</button>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-col">
+      <h3>🍴 Foodie</h3>
+      <p>Fresh & Fast food delivery at your doorstep. Taste the happiness in every bite!</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+      <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+      <p><i class="fas fa-envelope"></i> support@foodie.com</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Foodie. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

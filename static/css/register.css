@@ -1,0 +1,77 @@
+body {
+      height: 100vh;
+      background: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092") no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .register-card {
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      padding: 40px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      color: #fff;
+      margin: 10px; /* mobile ke liye spacing */
+    }
+    .register-card h3 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .form-control {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: #fff;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      background: rgba(255, 255, 255, 0.3);
+    }
+    .btn-custom {
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    }
+    .text-link a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .text-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* RESPONSIVENESS */
+    @media (max-width: 768px) {
+      .register-card {
+        padding: 30px;
+        max-width: 90%;
+      }
+      body {
+        background-position: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .register-card {
+        padding: 20px;
+        max-width: 95%;
+      }
+      .register-card h3 {
+        font-size: 1.4rem;
+      }
+      .btn-custom {
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+    }
