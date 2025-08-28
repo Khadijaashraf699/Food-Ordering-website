@@ -1,6 +1,10 @@
 from django.shortcuts import render
+from orders.models import Category
 
 # Create your views here.
 def home(request):
-    
-    return render(request, 'index.html')
+    category = Category.objects.all()
+    context={
+        'category': category
+    }
+    return render(request, 'index.html', context)

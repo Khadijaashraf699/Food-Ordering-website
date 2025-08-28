@@ -64,27 +64,17 @@
 </section>
 
 <section class="cards-section">
+  {% for cat in category %}
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Card Image">
-    <h3>Beautiful Jewelry</h3>
+    <img src="{{cat.image}}" alt="Card Image">
+    <h3>{{cat.name}}</h3>
     <p>Shine with our elegant jewelry collection, crafted with love.</p>
     <button>Shop Now</button>
   </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1600180758895-7c4c88e0c6e8" alt="Card Image">
-    <h3>Exclusive Design</h3>
-    <p>Handmade unique designs perfect for every occasion.</p>
-    <button>View More</button>
-  </div>
-
-  <div class="card">
-    <img src="{% static 'imgs/burger.jpg' %}" alt="Card Image">
-    <h3>Special Offers</h3>
-    <p>Don’t miss out on our seasonal discounts and bundles.</p>
-    <button>Grab Deal</button>
-  </div>
+   {% endfor %}
 </section>
+
+  
 
   <!-- Footer -->
   <!-- Footer Section -->
